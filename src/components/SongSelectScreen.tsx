@@ -246,7 +246,7 @@ const SongSelectScreen: React.FC<Props> = ({ onSelect, onBack }) => {
 
             {/* Gelpiyo icon */}
             <img
-              src="/assets/characters/gelpiyo.png" alt="Gelpiyo"
+              src="./assets/characters/gelpiyo.png" alt="Gelpiyo"
               style={{
                 width: 'auto', height: '80px', objectFit: 'contain',
                 filter: 'drop-shadow(0 4px 12px rgba(233,30,140,0.3))',

@@ -70,7 +70,7 @@ const TitleScreen: React.FC<Props> = ({ onStart, onCollection }) => {
 
   return (
     <div className="screen" style={{
-      background: `url('/assets/title_bg.png') center/cover`,
+      background: `url('./assets/title_bg.png') center/cover`,
       position: 'relative'
     }}>
       {/* Particle canvas overlay */}
@@ -117,7 +117,7 @@ const TitleScreen: React.FC<Props> = ({ onStart, onCollection }) => {
             animationName: 'none'
           }}>
             <img
-              src="/assets/characters/gelpiyo.png"
+              src="./assets/characters/gelpiyo.png"
               alt="Gelpiyo"
               style={{
                 width: 'auto', height: '120px',

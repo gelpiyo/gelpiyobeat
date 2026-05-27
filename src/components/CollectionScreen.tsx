@@ -111,7 +111,7 @@ const CollectionScreen: React.FC<Props> = ({ onBack }) => {
                 }}>
                   {unlocked ? (
                     <img
-                      src={`/assets/characters/${char.file}`}
+                      src={`./assets/characters/${char.file}`}
                       alt={char.name}
                       style={{
                         maxWidth: '100%', maxHeight: '100%',
@@ -201,7 +201,7 @@ const CollectionScreen: React.FC<Props> = ({ onBack }) => {
               marginBottom: '24px'
             }}>
               <img
-                src={`/assets/characters/${selectedChar.file}`}
+                src={`./assets/characters/${selectedChar.file}`}
                 alt={selectedChar.name}
                 style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
               />

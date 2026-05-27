@@ -23,7 +23,7 @@ export class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('gelpiyo1', '/assets/characters/gelpiyo.png');
+    this.load.image('gelpiyo1', './assets/characters/gelpiyo.png');
   }
 
   create() {
@@ -145,7 +145,7 @@ export class GameScene extends Phaser.Scene {
     }
   }
 
-  private handleTap(pointer: Phaser.Input.Pointer) {
+  private handleTap(_pointer: Phaser.Input.Pointer) {
     const { width, height } = this.scale;
     const areaTop = this.playAreaTop;
     const areaBottom = height - this.playAreaBottom;

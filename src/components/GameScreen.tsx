@@ -14,11 +14,11 @@ const GEL_H = 70;
 
 const CHAR_KEYS = ['gelpiyo', 'momopiyo', 'parupiyo', 'warupiyo', 'gelchiki'];
 const CHAR_FILES = [
-  '/assets/characters/gelpiyo.png',
-  '/assets/characters/momopiyo.png',
-  '/assets/characters/parupiyo.png',
-  '/assets/characters/warupiyo.png',
-  '/assets/characters/gelchiki.png',
+  './assets/characters/gelpiyo.png',
+  './assets/characters/momopiyo.png',
+  './assets/characters/parupiyo.png',
+  './assets/characters/warupiyo.png',
+  './assets/characters/gelchiki.png',
 ];
 
 interface Props {
@@ -636,7 +636,7 @@ const GameScreen: React.FC<Props> = ({ level, onFinish, onExit }) => {
   const jSize = judgment === 'PERFECT' ? '2rem' : judgment === 'GREAT' ? '1.6rem' : judgment === 'GOOD' ? '1.3rem' : '1.1rem';
 
   return (
-    <div className="screen" style={{ background: `url('/assets/game_bg.png') center/cover no-repeat` }}>
+    <div className="screen" style={{ background: `url('./assets/game_bg.png') center/cover no-repeat` }}>
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.7)', zIndex: 0 }} />
 
       {/* Flash */}

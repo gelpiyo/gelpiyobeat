@@ -12,18 +12,18 @@ class SoundManager {
       this.masterGain.connect(this.ctx.destination);
     }
     if (!this.titleBGM) {
-      this.titleBGM = new Audio('/assets/audio/bgm_title.mp3');
+      this.titleBGM = new Audio('./assets/audio/bgm_title.mp3');
       this.titleBGM.loop = true;
       this.titleBGM.volume = 0.3;
     }
     if (!this.gameBGM) {
-      this.gameBGM = new Audio('/assets/audio/bgm_game.mp3');
+      this.gameBGM = new Audio('./assets/audio/bgm_game.mp3');
       this.gameBGM.loop = true;
       this.gameBGM.volume = 0.3;
     }
   }
 
-  private createEnvelope(attack: number, decay: number, sustain: number, release: number) {
+  private createEnvelope(attack: number, decay: number, sustain: number, _release: number) {
     if (!this.ctx || !this.masterGain) return null;
     const gain = this.ctx.createGain();
     gain.connect(this.masterGain);
@@ -142,7 +142,7 @@ class SoundManager {
     }
   }
 
-  startGameBGM(bpm: number) {
+  startGameBGM(_bpm: number) {
     this.stopBGM();
     if (this.gameBGM) {
       this.gameBGM.play().catch(e => console.warn('BGM play blocked:', e));

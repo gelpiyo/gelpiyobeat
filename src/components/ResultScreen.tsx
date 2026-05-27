@@ -182,7 +182,7 @@ const ResultScreen: React.FC<Props> = ({ result, level, onNext, onTitle }) => {
 
   return (
     <div className="screen" style={{
-      background: `url('/assets/title_bg.png') center/cover`,
+      background: `url('./assets/title_bg.png') center/cover`,
       position: 'relative'
     }}>
       {/* White overlay */}
@@ -359,7 +359,7 @@ const ResultScreen: React.FC<Props> = ({ result, level, onNext, onTitle }) => {
                   boxShadow: '0 0 20px rgba(0,229,255,0.6)',
                   marginBottom: '4px'
                 }}>
-                  <img src={`/assets/characters/${rewardChar.file}`} alt={rewardChar.name} style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }} />
+                  <img src={`./assets/characters/${rewardChar.file}`} alt={rewardChar.name} style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }} />
                 </div>
                 <div style={{ color: 'var(--color-text-dark)', fontSize: '1rem', fontWeight: 900, fontFamily: "'Orbitron'" }}>{rewardChar.name}</div>
                 <div style={{ fontSize: '0.6rem', color: '#ff1744', fontWeight: 800 }}>RARITY: {rewardChar.rarity}</div>
